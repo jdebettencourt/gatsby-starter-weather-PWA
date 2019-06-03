@@ -92,7 +92,7 @@ export default ({ children }) => (
     {children}
 {/*    <Link to="/">Home </Link> */}
     <h3><ul>
-      <li><h3>Currently Time: {data.weatherData.currently.time}</h3></li> 
+      <li><h4>Currently Time: {Date(data.weatherData.currently.time*1000)}</h4></li> 
       <li><h3>Currently Summary: {data.weatherData.currently.summary}</h3></li> 
       <li><h3>Currently Temperature: {data.weatherData.currently.temperature}</h3></li> 
       <li><h3>cloudCover: {data.weatherData.currently.cloudCover}</h3></li> 
